@@ -237,7 +237,7 @@ Ok. Here is a PHP function like you use it and declare it with the PHP language 
 This is an easy function so that you understand things.
 Here is what it looks like when programmed in C::
 
-    PHP_FUNCTION(celsius_to_fahrenheit)
+    PHP_FUNCTION(fahrenheit_to_celsius)
     {
         /* code to go here */	    
     }
@@ -249,7 +249,7 @@ Macro expanded, that gives::
         /* code to go here */
     }
 
-Take a break and think about the majors differences.
+Take a break and think about the major differences.
 
 First strange thing, in C, the function is not expected to return anything. That's a ``void`` declared function, you 
 can't here in C return something. But we notice we receive an argument called ``return_value`` of type ``zval *``, 
